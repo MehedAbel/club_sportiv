@@ -1,3 +1,7 @@
+<?php
+    include realpath(dirname(__FILE__) . '/config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +13,13 @@
 </head>
 <body>
     <div class="container">
-        <?php include './includes/nav.php' ?>
+        <?php 
+            include './includes/nav.php'; 
+        ?>
+
         <div class="container__content">
             <h1>Welcome Home</h1>
         </div>
     </div>
 </body>
 </html>
-
-<?php
-
-?>
