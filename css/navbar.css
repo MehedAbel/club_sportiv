@@ -1,0 +1,22 @@
+.container__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.container__navbar__logo {
+  font-size: 1.5rem;
+}
+
+.container__navbar__logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container__navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
