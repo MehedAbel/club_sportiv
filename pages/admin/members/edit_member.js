@@ -1,23 +1,23 @@
 document
-  .querySelector(".container__content__admin_edit_announcement__form")
+  .querySelector(".container__content__admin_edit_member__form")
   .addEventListener("submit", (event) => {
     event.preventDefault();
 
     const id = new URLSearchParams(window.location.search).get("id");
-    const title = document.querySelector("#title").value;
-    const description = document.querySelector("#description").value;
+    const name = document.querySelector("#name").value;
+    const team_id = document.querySelector("#team").value;
 
-    if (!title || !description) {
-      alert("Title and description cannot be empty");
+    if (!name || !team_id) {
+      alert("Name and team cannot be empty");
       return;
     }
 
-    fetch("../../../scripts/edit_admin_announcement.php", {
+    fetch("../../../scripts/edit_admin_member.php", {
       method: "POST",
       body: JSON.stringify({
         id: id,
-        title: title,
-        description: description,
+        name: name,
+        team_id: team_id,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -27,9 +27,8 @@ document
       .then((data) => {
         if (data.status === "success") {
           console.log(data.message);
-          // Redirect to the "anunturi" page
           window.location.href =
-            "/club_sportiv/pages/admin/announcements/announcements.php";
+            "/club_sportiv/pages/admin/members/members.php";
         } else {
           alert(data.message);
           console.error(data.message);

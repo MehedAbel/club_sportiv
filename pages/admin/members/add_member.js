@@ -1,28 +1,23 @@
 const form = document.querySelector(
-  ".container__content__admin_add_announcement__form"
+  ".container__content__admin_add_member__form"
 );
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(form);
-  const title = formData.get("title");
-  const description = formData.get("description");
+  const name = formData.get("name");
+  const team_id = formData.get("team");
 
-  if (!title || title.trim() === "") {
-    alert("Title is required");
+  if (!name || name.trim() === "") {
+    alert("Name is required");
     return;
   }
 
-  if (!description || description.trim() === "") {
-    alert("Description is required");
-    return;
-  }
-
-  fetch("../../../scripts/add_admin_announcement.php", {
+  fetch("../../../scripts/add_admin_member.php", {
     method: "POST",
     body: JSON.stringify({
-      title: title,
-      description: description,
+      name: name,
+      team_id: team_id,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -33,8 +28,7 @@ form.addEventListener("submit", async (e) => {
       if (data.status === "success") {
         console.log(data.message);
         form.reset();
-        window.location.href =
-          "/club_sportiv/pages/admin/announcements/announcements.php";
+        window.location.href = "/club_sportiv/pages/admin/members/members.php";
       } else {
         alert(data.message);
         console.error(data.message);

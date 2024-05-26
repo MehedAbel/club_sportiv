@@ -1,0 +1,42 @@
+.container__content__admin_add_member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  padding: 1rem;
+  width: 100%;
+}
+
+.container__content__admin_add_member__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1rem;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.container__content__admin_add_member__form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container__content__admin_add_member__form__field__input_name {
+  font-size: 16px;
+  padding: 0.3rem;
+}
+
+.container__content__admin_add_member__form__btn {
+  font-size: 16px;
+  padding: 0.3rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  max-width: 200px;
+}

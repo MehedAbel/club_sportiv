@@ -25,7 +25,7 @@
                     </div>
                     <div class="container__content__admin_edit_announcement__form__field">
                         <label for="description">Descriere</label>
-                        <textarea name="description" id="description" class="container__content__admin_edit_announcement__form__field__description"><?php echo htmlspecialchars($description) ?>></textarea>
+                        <textarea name="description" id="description" class="container__content__admin_edit_announcement__form__field__description"><?php echo htmlspecialchars($description) ?></textarea>
                     </div>
                     <button class="container__content__admin_edit_announcement__form__btn" type="submit">Editeaza Anunt</button>
                 </form>

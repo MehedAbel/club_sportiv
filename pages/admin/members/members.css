@@ -1,4 +1,4 @@
-.container__content__admin_announcements {
+.container__content__admin_members {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   margin-top: 20px;
 }
 
-.container__content__admin_announcements__add_btn {
+.container__content__admin_members__add_btn {
   font-size: 16px;
   padding: 0.3rem;
   background-color: #007bff;
@@ -16,7 +16,7 @@
   max-width: 200px;
 }
 
-.container__content__admin_announcements__an {
+.container__content__admin_members__member {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,13 +29,13 @@
   gap: 0.4rem;
 }
 
-.container__content__admin_announcements__an__actions {
+.container__content__admin_members__member__actions {
   display: flex;
   justify-content: center;
   gap: 0.4rem;
 }
 
-.container__content__admin_announcements__an__actions__edit {
+.container__content__admin_members__member__actions__edit {
   font-size: 16px;
   padding: 0.3rem;
   background-color: #007bff;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.container__content__admin_announcements__an__actions__delete {
+.container__content__admin_members__member__actions__delete {
   font-size: 16px;
   padding: 0.3rem;
   background-color: #dc3545;
@@ -53,13 +53,13 @@
   cursor: pointer;
 }
 
-.container__content__admin_announcements__an__title {
+.container__content__admin_members__member__name {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
 
-.container__content__admin_announcements__an__date {
+.container__content__admin_members__member__team {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
