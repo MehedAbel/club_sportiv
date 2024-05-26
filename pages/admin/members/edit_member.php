@@ -1,3 +1,15 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['loggedin'])) {
+    header('Location: /club_sportiv/login.php');
+    exit;
+}
+
+?>
+
 <?php 
     include "../../../scripts/get_admin_member_data.php"
 ?>

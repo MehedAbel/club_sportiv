@@ -2,10 +2,8 @@
     include realpath(dirname(__FILE__) . '/../config.php');
     include ROOT_PATH . 'includes/db.php';
 
-    // Get the raw POST data
     $rawData = file_get_contents("php://input");
 
-    // Decode the JSON data
     $data = json_decode($rawData, true);
 
     $id = isset($data["id"]) ? $data["id"] : '';
@@ -13,7 +11,6 @@
     $team_id = isset($data["team_id"]) ? $data["team_id"] : '';
     $response = array();
 
-    // Validate ID, name, and team_id
     if(empty($id) || empty($name) || empty($team_id)) {
         $response['status'] = 'error';
         $response['message'] = 'ID, name, or team_id cannot be empty';
@@ -33,7 +30,6 @@
 
     mysqli_close($conn);
 
-    // Send JSON response
     header('Content-Type: application/json');
     echo json_encode($response);
 ?>
