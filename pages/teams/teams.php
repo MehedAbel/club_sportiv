@@ -12,6 +12,9 @@
         <?php include '../../includes/nav.php' ?>   
         <div class="container__content">
             <h1>Echipe</h1>
+            <div class="container__content__teams">
+                <?php include '../../scripts/get_teams.php' ?>
+            </div>
         </div>
     </div>
 </body>

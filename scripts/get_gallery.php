@@ -2,16 +2,15 @@
     include realpath(dirname(__FILE__) . '/../config.php');
     include ROOT_PATH . 'includes/db.php';
 
-    $sql = "SELECT * FROM announcements";
+    $sql = "SELECT * FROM gallery";
 
     try {
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div class='container__content__announcements__an'>";
-                echo "<h2 class='container__content__announcements__an__title'>" . $row["title"] . "</h2>";
-                echo "<p class='container__content__announcements__an__date'>" . $row["creation_date"] . "</p>";
+                echo "<div class='container__content__gallery__img'>";
+                echo "<img src='" . BASE_URL . $row["image_path"] . "' alt='" . $row["name"] . "'>";
                 echo "</div>";
             }
         } else {

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="index.css">
-    <title>Home Page</title>
+    <title>Acasa</title>
 </head>
 <body>
     <div class="container">
@@ -18,7 +18,7 @@
         ?>
 
         <div class="container__content">
-            <h1>Welcome Home</h1>
+            <h1>Acasa</h1>
         </div>
     </div>
 </body>

@@ -8,10 +8,13 @@
     <title>Sectii</title>
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <?php include '../../includes/nav.php' ?>
         <div class="container__content">
             <h1>Sectii</h1>
+            <div class="container__content__departments">
+                <?php include '../../scripts/get_departments.php' ?>
+            </div>
         </div>
     </div>
 </body>

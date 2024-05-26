@@ -1,0 +1,24 @@
+.container__content__gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container__content__gallery__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  border: 1px solid black;
+  padding: 0.5rem;
+  max-width: 500px;
+}
+
+.container__content__gallery__img img {
+  width: 100%;
+  height: auto;
+}

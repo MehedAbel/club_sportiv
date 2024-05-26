@@ -8,11 +8,13 @@
     <title>Anunturi</title>
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <?php include '../../includes/nav.php' ?>
         <div class="container__content">
             <h1>Anunturi</h1>
-            <?php include '../../scripts/get_announcements.php'?>
+            <div class="container__content__announcements">
+                <?php include '../../scripts/get_announcements.php'?>
+            </div>
         </div>
     </div>
 </body>

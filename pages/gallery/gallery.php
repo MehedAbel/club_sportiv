@@ -11,7 +11,10 @@
 <div class="container">
         <?php include '../../includes/nav.php' ?>   
         <div class="container__content">
-            <h1>Welcome to the Gallery</h1>
+            <h1>Galerie</h1>
+            <div class="container__content__gallery">
+                <?php include '../../scripts/get_gallery.php' ?>
+            </div>
         </div>
     </div>
 </body>
