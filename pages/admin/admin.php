@@ -8,12 +8,13 @@
     <title>Admin</title>
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <?php include '../../includes/nav.php' ?>
         <div class="container__content">
             <h1>Pagina Admin</h1>
             <div class="container__content__admin">
-                
+                <p><a href="/club_sportiv/pages/admin/announcements/announcements.php">Adauga / Editeaza / Sterge Anunturi</a></p>
+                <p><a href="/club_sportiv/pages/admin/members/members.php">Adauga / Editeaza / Sterge Membri</a></p>
             </div>
         </div>
     </div>

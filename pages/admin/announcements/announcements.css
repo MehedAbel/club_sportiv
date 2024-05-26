@@ -1,0 +1,31 @@
+.container__content__admin_announcements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container__content__admin_announcements__an {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  border: 1px solid black;
+  padding: 1rem;
+  width: 100%;
+}
+
+.container__content__admin_announcements__an__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container__content__admin_announcements__an__date {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
