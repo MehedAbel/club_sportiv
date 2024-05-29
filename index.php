@@ -19,6 +19,10 @@
 
         <div class="container__content">
             <h1>Acasa</h1>
+            <div class="container__content__home">
+                <p>Bine ati venit pe pagina clubului sportiv!</p>
+                <p>Aici puteti gasi informatii despre clubul nostru, membrii, anunturi si multe altele.</p>
+            </div>
         </div>
     </div>
 </body>

@@ -1,5 +1,12 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (isset($_SESSION['loggedin'])) {
+    header('Location: /club_sportiv/pages/admin/admin.php');
+    exit;
+}
 
 include realpath(dirname(__FILE__) . '/config.php');
 include ROOT_PATH . 'includes/db.php';
