@@ -3,7 +3,7 @@
 ## Project Overview
 
 The goal of this project is to develop a site for a sports club using PHP and JavaScript. 
-The webesite must inlcude the following pages:
+The website must inlcude the following pages:
 - Home: A page with general information about the club.
 - Sections: A page detailing the different sports offered by the club.
 - Teams: A page showcasing the club's teams.
